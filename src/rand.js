@@ -5,7 +5,7 @@ const getRandomInt = (min, max) => {
   return Math.floor(Math.random() * (maxRound - minRound)) + minRound;
 };
 
-const getRandomNumber = () => getRandomInt(0, 11);
+const getRandomNumber = () => getRandomInt(1, 11);
 
 const getRandomMatematicOperation = () => {
   const number = getRandomInt(1, 4);
