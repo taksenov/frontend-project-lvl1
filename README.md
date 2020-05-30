@@ -11,6 +11,9 @@
 # Brain-gcd
 [![asciicast](https://asciinema.org/a/6jzMJabWxf1w0eqxzrC58ojrm.svg)](https://asciinema.org/a/6jzMJabWxf1w0eqxzrC58ojrm)
 
+# Brain-progression
+[![asciicast](https://asciinema.org/a/dirF3C7pVAmNZh6oXLgiLuACw.svg)](https://asciinema.org/a/dirF3C7pVAmNZh6oXLgiLuACw)
+
 # Code Climate
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage)](https://codeclimate.com/github/codeclimate/codeclimate/test_coverage)
 
