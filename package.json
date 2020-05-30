@@ -1,8 +1,12 @@
 {
-  "name": "frontend-project-lvl1",
+  "name": "frontend-project-lvl1_btm",
   "version": "1.0.0",
-  "description": "",
+  "description": "Проект 1 уровня обучения на профессии Фронтенд JavaScript сайта hexlet.io",
   "main": "index.js",
+  "type": "module",
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
