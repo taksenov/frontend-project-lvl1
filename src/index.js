@@ -1,29 +1,28 @@
-import * as messages from './messages.js';
-import * as cli from './cli.js';
+import readlineSync from 'readline-sync';
 
 const playGame = (userName, resultRound, conditionOfGame) => {
-  const allRounds = 3;
-  let correctAnswers = 0;
+  const countRounds = 3;
   console.log(conditionOfGame);
-  while (correctAnswers < allRounds) {
+
+  for (let i = 0; i < countRounds; i += 1) {
     const { questionText, correctAnswer } = resultRound();
-    messages.question(questionText);
-    const userAnswer = cli.getUserAnswer();
+    console.log(`Question: ${questionText}`);
+    const userAnswer = readlineSync.question('Your answer: ');
+
     if (userAnswer !== correctAnswer) {
-      messages.lose(userName, userAnswer, correctAnswer);
-      break;
+      console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${correctAnswer}"`);
+      console.log(`Let's try again, ${userName}!`);
+      return;
     }
-    messages.success();
-    correctAnswers += 1;
+
+    console.log('Correct!');
   }
-  if (correctAnswers === allRounds) {
-    messages.win(userName);
-  }
+  console.log(`Congratulations, ${userName}`);
 };
 
 const welcomeAndGetUserName = () => {
   console.log('Welcome to the Brain Games!');
-  const userName = cli.getUserName();
+  const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
   return userName;
 };

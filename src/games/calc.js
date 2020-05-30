@@ -1,4 +1,4 @@
-import * as rand from '../rand.js';
+import getRandomNumber, { getRandomMatematicOperation } from '../rand.js';
 import gameEngine from '../index.js';
 
 const calculate = (number1, number2, operation) => {
@@ -15,9 +15,9 @@ const calculate = (number1, number2, operation) => {
 };
 
 const resultRound = () => {
-  const number1 = rand.getRandomNumber();
-  const number2 = rand.getRandomNumber();
-  const operation = rand.getRandomMatematicOperation();
+  const number1 = getRandomNumber();
+  const number2 = getRandomNumber();
+  const operation = getRandomMatematicOperation();
   const questionText = `${number1} ${operation} ${number2}`;
   const correctAnswer = String(calculate(number1, number2, operation));
   return { questionText, correctAnswer };

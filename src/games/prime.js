@@ -1,4 +1,4 @@
-import { getRandomNumber } from '../rand.js';
+import getRandomNumber from '../rand.js';
 import gameEngine from '../index.js';
 
 const isPrime = (number) => {

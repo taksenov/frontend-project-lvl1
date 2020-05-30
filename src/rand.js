@@ -8,17 +8,10 @@ const getRandomInt = (min, max) => {
 const getRandomNumber = () => getRandomInt(1, 11);
 
 const getRandomMatematicOperation = () => {
-  const number = getRandomInt(1, 4);
-  if (number === 1) {
-    return '+';
-  }
-  if (number === 2) {
-    return '-';
-  }
-  if (number === 3) {
-    return '*';
-  }
-  return '+';
+  const operations = ['+', '-', '*'];
+  const number = getRandomInt(1, operations.length);
+  return operations[number - 1];
 };
 
-export { getRandomNumber, getRandomMatematicOperation };
+export default getRandomNumber;
+export { getRandomMatematicOperation };
