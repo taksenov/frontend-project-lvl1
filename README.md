@@ -2,6 +2,10 @@
 
 Проект первого уровня обучения профессии Фронтенд JavaScript
 
+# Brain-Even 
+asciinema
+[![asciicast](https://asciinema.org/a/XPWesZDldktaluAQsciqs98yF.svg)](https://asciinema.org/a/XPWesZDldktaluAQsciqs98yF)
+
 # Code Climate
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage)](https://codeclimate.com/github/codeclimate/codeclimate/test_coverage)
 
