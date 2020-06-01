@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import { setUserData } from '../index.js';
+import setUserData from '../utils/SetUserData';
 
 setUserData();

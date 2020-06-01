@@ -1,7 +1,7 @@
-import getRandomNumber from '../rand.js';
+import { getRandomNumber } from '../utils/Random';
 import gameEngine from '../index.js';
 
-const isEven = (number) => number % 2 === 0;
+const isEven = number => number % 2 === 0;
 
 const resultRound = () => {
   const randomNumber = getRandomNumber();
@@ -13,6 +13,7 @@ const resultRound = () => {
 };
 
 export default () => {
-  const conditionOfGame = 'Answer "yes" if the number is even, otherwise answer "no".';
+  const conditionOfGame =
+    'Answer "yes" if the number is even, otherwise answer "no".';
   gameEngine(resultRound, conditionOfGame);
 };
