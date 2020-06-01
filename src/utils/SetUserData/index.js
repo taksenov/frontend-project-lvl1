@@ -1,1 +1,1 @@
-export { default } from './SetUserData';
+export { default } from './SetUserData.js';

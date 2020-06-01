@@ -1,4 +1,7 @@
-import { getRandomNumber, getRandomMatematicOperation } from '../utils/Random';
+import {
+  getRandomNumber,
+  getRandomMatematicOperation,
+} from '../utils/Random/index.js';
 import gameEngine from '../index.js';
 
 const calculate = (number1, number2, operation) => {

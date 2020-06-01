@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 
-import setUserData from './utils/SetUserData';
+import setUserData from './utils/SetUserData/index.js';
 
 const playGame = (userName, resultRound, conditionOfGame) => {
   const countRounds = 3;
